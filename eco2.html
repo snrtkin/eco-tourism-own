@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Setouchi: Japan's Scenic Paradise</title>
+    <link rel="stylesheet" href="eco.css">
+    <script src="translate.js"></script>
+    <script>
+  // Set default language to Japanese on page load
+  document.addEventListener("DOMContentLoaded", () => {
+      setLanguage('ja');
+  });
+</script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('ja')">日本語</button>
+    <button onclick="setLanguage('my')">မြန်မာ</button>
+    <button onclick="setLanguage('bn')">বাংলা</button>
+    <button onclick="setLanguage('vi')">Tiếng Việt</button>
+    <button onclick="setLanguage('ne')">नेपाली</button>
+</div>
+
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#highlights" data-translate="nav_highlights">Highlights</a></li>
+                <li><a href="#culture" data-translate="nav_culture">Culture</a></li>
+                <li><a href="#map" data-translate="nav_map">Map</a></li>
+                <li><a href="#tips" data-translate="nav_tips">Travel Tips</a></li>
+                <li><a href="#eco" data-translate="nav_eco">Eco-Tourism</a></li>
+                <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 data-translate="header_title">Eco-Tourism Setouchi</h1>
+            <p class="tagline" data-translate="header_tagline">Promote the Eco-Tourism of Seas and Green Forest</p>
+            <h2 data-translate="header_subtitle">Discover Sustainable Travel</h2>
+            <p data-translate="header_text">
+                Find eco-friendly accommodations and experiences that respect nature and local communities.
+            </p>
+        </div>
+    </header>
+
+    <section id="highlights" class="attractions">
+  <div class="container">
+    <h2 data-translate="highlights_title">Top Attractions</h2>
+    <div class="grid">
+
+      <!-- Card 1 -->
+      <a href="https://setouchi-artfest.jp/" target="_blank" class="card-link">
+        <div class="card">
+          <img src="pic/8ae337b7-840c-4d4c-a33d-425205a2a8a1.jpg" alt="festival">
+          <h3 data-translate="festival_title">Setouchi Festival</h3>
+          <p data-translate="festival_text">
+            The festival of Setouchi is celebrated rarely, and all the people in the community share their thoughts and worship the gods together.
+          </p>
+        </div>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="https://okayama-castle.jp/" target="_blank" class="card-link">
+        <div class="card">
+          <img src="pic/castel.png" alt="View point">
+          <h3 data-translate="castle_title">Okayama Castle</h3>
+          <p data-translate="castle_text">
+            This is one of the best places to visit. The place is very clean and surrounded by the sea and green forest. It also has an olive oil forest and plants.
+          </p>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="https://www.okayama-kanko.jp/spot/11137" target="_blank" class="card-link">
+        <div class="card">
+          <img src="pic/sea.jpg" alt="Sea">
+          <h3 data-translate="ushima_title">Ushimado</h3>
+          <p data-translate="ushima_text">
+            A beautiful sea where you can relax and enjoy the view. Perfect for swimming with family and friends during summer.
+          </p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Culture Section -->
+    <section id="culture" class="culture">
+        <div class="container">
+            <h2 data-translate="culture_title">Culture & Food</h2>
+            <div class="flex">
+                <div class="culture-item">
+                    <img src="pic/shrine.jpg" height="200px" width="200px">
+                    <h3 data-translate="local_culture_title">Local Culture</h3>
+                    <p data-translate="local_culture_text">Historical places that are great for visitors. They express the history of Setouchi and Okayama.</p>
+                </div>
+                <div class="culture-item">
+                    <img src="pic/art.jpg" height="200px" width="200px">
+                    <h3 data-translate="art_festivals_title">Art Festivals</h3>
+                    <p data-translate="art_festivals_text">Handmade art created by local people, very famous in Setouchi. Visit the Setouchi Triennale for contemporary art exhibitions.</p>
+                </div>
+                <div class="culture-item">
+                    <img src="pic/castel.png" height="200px" width="200px">
+                    <h3 data-translate="historic_temples_title">Historic Temples</h3>
+                    <p data-translate="historic_temples_text">Explore the Okayama Castle which is very famous. Visitors can enjoy the castle's unique architecture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map">
+        <div class="container">
+            <h2 class="section-title" data-translate="map_title">Explore Setouchi on the Map</h2>
+            <p class="section-lead" data-translate="map_lead">Centered on the Seto Inland Sea (Setonaikai) between Honshu and Shikoku.</p>
+            <div class="map-wrap">
+                <div class="map-head">
+                    <strong>Interactive Map</strong>
+                    <a class="open" rel="noopener" target="_blank" href="https://www.google.com/maps/place/Seto+Inland+Sea" data-translate="map_open">Open in Google Maps</a>
+                </div>
+        <iframe class="map-iframe" loading="lazy"
+                   src="https://www.google.com/maps?q=34.2552909,133.0512394&hl=en&z=12&output=embed"
+                   title="Seto Inland Sea on Google Maps"
+                   referrerpolicy="no-referrer-when-downgrade"
+                   allowfullscreen>
+          </iframe>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Tips Section -->
+    <section id="tips" class="tips">
+        <div class="container">
+            <h2 data-translate="tips_title">Travel Tips</h2>
+            <ul>
+                <li data-translate="tips_1">🚆 Transport: Use the JR Pass for trains between islands.</li>
+                <li data-translate="tips_2">🌸 Best Time: Spring (cherry blossoms) or Autumn (mild weather).</li>
+                <li data-translate="tips_3">🚴 Activity: Cycle the Shimanami Kaido route.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Eco-Tourism Section -->
+    <section id="eco" class="eco">
+        <div class="container">
+            <h2 class="section-title" data-translate="eco_title">Eco-Tourism Ideas</h2>
+            <p class="section-lead" data-translate="eco_lead">Low-impact adventures that support conservation and communities.</p>
+            <div class="grid">
+                <article class="card">
+                    <img class="media" src="olive oil.jpg" alt="Olive trees on a sunny hillside">
+                    <div class="pad">
+                        <span class="tag" data-translate="eco1_tag">Shōdoshima</span>
+                        <h3 data-translate="eco1_title">Olive & Citrus Farm Stays</h3>
+                        <p data-translate="eco1_text">Harvest with locals and learn water-wise farming on the “island of olives”.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="media" src="Solar boat.jpg" alt="Sailboat powered by solar panels">
+                    <div class="pad">
+                        <span class="tag" data-translate="eco2_tag">Island Hopping</span>
+                        <h3 data-translate="eco2_title">Low-Emission Boat Tours</h3>
+                        <p data-translate="eco2_text">Choose electric or solar boats between art islands and fishing towns.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="media" src="cycling.jpg" alt="Cyclist riding with family and friends">
+                    <div class="pad">
+                        <span class="tag" data-translate="eco3_tag">Shimanami Kaido</span>
+                        <h3 data-translate="eco3_title">Guided Cycling</h3>
+                        <p data-translate="eco3_text">Car-free routes, local guides, and plastic-free picnics with island produce.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="media" src="planting.jpg" alt="Divers planting coral fragments">
+                    <div class="pad">
+                        <span class="tag" data-translate="eco4_tag">Conservation</span>
+                        <h3 data-translate="eco4_title">Reef & Shoreline Care</h3>
+                        <p data-translate="eco4_text">Join volunteer days restoring habitats and cleaning remote beaches.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="contact-form">
+            <h2 class="section-title" data-translate="contact_title">Contact Us</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name" data-translate="name_label">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" data-translate="email_label">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject" data-translate="subject_label">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" data-translate="message_label">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn" data-translate="send_button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p data-translate="footer_text">© 2024 Explore Setouchi | Privacy Policy</p>
+            <div class="social">
+                <a href="https://x.com/shimafes"target="_blank" class="card-link"><i class="fab fa-x"></i></a
